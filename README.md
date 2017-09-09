@@ -1,2 +1,8 @@
 # Rademade
 pageCRM
+
+1. Install node.js and npm
+https://www.npmjs.com/get-npm
+2. Go to project root and install node_modules
+npm install --save-dev or npm i -D
+3. Start server with command 'gulp'

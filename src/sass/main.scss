@@ -1,0 +1,404 @@
+@charset "UTF-8";
+@import "variables";
+@import "reset";
+
+html, body {
+	height: 100%;
+}
+
+.wrap {
+	width: 100%;
+	min-height: 100%;
+	display: flex;
+}
+
+/*________________SIDEBAR__________________*/
+
+.sidebar {
+	min-height: 100vh;
+	width: 22%;
+	padding: 42px 0 0 0;
+	background-color: $darkGrey;
+	font-family: $openSans;
+	box-sizing: border-box;
+
+	&__title {
+		padding-left: 28px;
+		color: $yellow;
+		font-size: 28px;
+		letter-spacing: -1px;
+	}
+
+	&__menu {
+		margin-top: 47px;
+	}
+
+	&__item {
+		border-left: 6px solid $darkGrey;
+	}	
+
+	&__link {
+		position: relative;
+		margin-right: 15px;
+		padding: 14px 12px;
+		display: block;
+		font-weight: lighter;
+		font-size: 17px;
+		color: $white;
+		line-height: 30px;
+		border-bottom: 2px solid rgba(255, 255, 255, .2);
+		cursor: pointer;
+
+		&:focus {
+			margin-top: -3px;
+    		margin-bottom: 5px;
+    		margin-right: 0px;
+		    margin-left: -6px;
+			background-color: #442a9d;
+		    border-left: 6px solid #ffc12d;
+		    border-bottom: none;
+		    outline: none;
+		}
+	}
+
+	&__icon {
+		padding-left: 5px;
+		padding-right: 20px;
+		width: 24px;
+		height: 22px;
+	}
+}
+
+/*___________________CONTENT___________________*/
+
+.content {
+	width: 78%;
+	
+}
+
+.header {
+	padding-top: 15px;
+    padding-left: 38px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid #ededed;
+
+	&__customers {
+		font-family: $openSans;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 12px;
+		color: $grey;
+	}
+
+	&__pointer {
+	    width: 14px;
+	    margin-left: 18px;
+	    display: inline-block;
+	}
+
+	&__name {
+    	margin-left: 16px;
+		font-family: $openSans;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 12px;
+		color: $blue;
+	}
+}
+
+.form {
+	margin-left: 261px;
+
+	&__search {
+		width: 285px;
+	    padding: 10px;
+	    font-family: "Open Sans", sans-serif, Arial;
+	    font-size: 12px;
+	    background-image: url(../img/search.svg);
+	    background-repeat: no-repeat;
+	    background-size: 17px;
+	    background-position-x: 245px;
+	    background-position-y: center;
+	    border: 1px solid #999999;
+	    border-radius: 3px;
+	    outline: none;
+	}
+}
+
+.notification {
+	margin-left: 43px;
+	position: relative;
+
+	&__img {
+		display: block;
+		width: 23px;
+		height: 22px;
+	}
+
+	&__value {
+		position: absolute;
+	    top: -3px;
+	    left: 13px;
+	    width: 16px;
+	    height: 16px;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    border-radius: 50%;
+	    color: #fff;
+	    text-align: center;
+	    font-size: 12px;
+	    background-color: #f14e95;
+	}
+}
+
+.message {
+	margin-left: 40px;
+	display: flex;
+	align-items: center;
+
+	&__user-photo {
+		margin-right: 11px;
+		width: 38px;
+		height: 38px;
+		display: block;
+	}
+
+	&__text {
+		font-family: $openSans;
+		font-weight: bold;
+		font-size: 16px;
+		color: $grey;
+	}
+}
+
+/*_______________PROFILE______________*/
+
+.profile {
+
+	&__user-photo {
+		display: block;
+	    width: 89px;
+	    height: 89px;
+	    float: left;
+	    clear: both;
+	    margin-left: 35px;
+	}
+
+	&__user-info {
+		margin-top: 62px;
+    	margin-left: 164px;
+    	padding-bottom: 16px;
+		font-family: $openSans;
+		border-bottom: 1px solid  #ededed;
+	}
+
+	&__user-name {
+		font-size: 20px;
+		font-weight: bold;
+		line-height: 12px;
+		text-transform: uppercase;
+		color: $darkGrey;
+	}
+
+	&__user-state {
+		display: inline-block;
+		width: 49px;
+		margin-left: 14px;
+		padding: 4px 0px;
+		font-size: 11px;
+		font-weight: bold;
+		background-color: $yellow;
+		border-radius: 5px;
+		color: $white;
+		text-align: center;
+	}
+
+	&__user-department {
+		margin-top: 10px;
+		font-size: 15px;
+		font-weight: bold;
+		color: $lightGrey;
+	}
+
+	&__contacts {
+		margin-top: 32px;
+		margin-left: 167px;
+		display: flex;
+		font-family: $openSans;
+	}
+
+	&__label,
+	&__add {
+		font-weight: 700;
+		font-size: 12px;
+		color: $lightGrey;
+		line-height: 12px;
+		text-transform: uppercase;
+		
+	}
+
+	&__add {
+		margin-left: 155px;
+	}
+
+	&__phone,
+	&__address {
+		padding-top: 11px;
+		display: block;
+		font-size: 15px;
+		font-weight: 700;
+		line-height: 12px;
+		color: $blue;
+		text-transform: capitalize;
+	}
+}
+
+.btn-quote {
+	margin-left: 264px;
+	padding: 10px 24px;
+	background-color: #303841;;
+	color: $yellow;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 12px;
+	cursor: pointer;
+
+		&:active {
+			background-color: $blue;
+			color: $white;
+			transition: .2s;
+		}
+}
+
+/*______________DETAILS_____________*/
+
+.details {
+	position: relative;
+	font-family: $openSans;
+
+	&__tabs {
+		margin-left: 22px;
+		display: flex;
+		font-size: 14px;
+		font-weight: bold;
+		text-transform: uppercase;
+		line-height: 30px;
+	}
+
+	&__tab {
+		position: relative;
+		margin: 85px 8px 0 19px;
+		padding: 0 15px 18px;
+		cursor: pointer;
+	}
+
+	&__content {
+		position: fixed;
+		min-height: 100%;		
+		background-color: #ededed;
+	}
+
+	&__item {
+		padding: 40px;
+    	line-height: 30px;
+    	text-align: justify;
+	}	
+}
+
+.active {
+	
+	&:after {
+		content: "";
+		clear: both;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		height: 6px;
+		width: 100%;
+		background-color: $blue;
+		border-radius: 5px;
+		}
+}
+
+.show {
+	display: block;
+}
+
+.hide {
+	display: none;
+}
+
+/*___________MEDIA Queries__________*/
+
+@media screen and (min-width: 1280px) and (max-width: 1366px) {
+	.header {
+		padding-left: 20px;
+	}
+
+	.form {
+    	margin-left: 220px;
+    	
+    	&__search {
+			width: 270px;
+			background-position-x: 230px;
+		}
+	}
+
+	.btn-quote {
+		margin-left: 170px;
+	}
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1279px) {
+	.header {
+		padding-left: 20px;
+	}
+
+	.form {
+    	margin-left: 140px;
+    	
+    	&__search {
+			width: 200px;
+			background-position-x: 160px;
+		}
+	}
+
+	.profile__add {
+    	margin-left: 90px;
+	}
+
+	.btn-quote {
+    	margin-left: 115px;
+	}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1099px) {
+	.header {
+		padding-left: 20px;
+	}
+
+	.form {
+    	margin-left: 75px;
+    	
+    	&__search {
+			width: 200px;
+			background-position-x: 160px;
+		}
+	}
+
+	.profile__add {
+    	margin-left: 50px;
+	}
+
+	.btn-quote {
+    	margin-left: 90px;
+    	padding: 10px 15px;
+	}
+}
