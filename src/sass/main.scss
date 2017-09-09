@@ -181,7 +181,6 @@ html, body {
 	&__user-photo {
 		display: block;
 	    width: 89px;
-	    height: 89px;
 	    float: left;
 	    clear: both;
 	    margin-left: 35px;
@@ -401,4 +400,11 @@ html, body {
     	margin-left: 90px;
     	padding: 10px 15px;
 	}
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+   /* IE10+ specific styles go here */ 
+   .profile__user-photo {
+   	padding-top: 60px;
+   } 
 }
